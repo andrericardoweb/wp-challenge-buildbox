@@ -44,8 +44,8 @@ Text Domain: desafio-wp
   --black-transparent: rgba(0, 0, 0, 0.9);
   --white-color: #fff;
   --white-trasparent: rgba(255, 255, 255, 0.16);
-  --gray01: #121212;
-  --gray02: #5A5A5A;
+  --gray-dark: #121212;
+  --gray-light: #5A5A5A;
   /* ==== Font and typografy ==== */
   --body-font: 'CircularSpotify', sans-serif;
   --h1-font-size: 2.5rem;
@@ -53,6 +53,7 @@ Text Domain: desafio-wp
   --h3-font-size: 1.25rem;
   --normal-font-size: 1rem;
   --normal-font-weight: 700;
+  --medium-font-weight: 500;
   --small-font-size: .75rem;
   --small-font-weight: 700;
   /* ==== z-index ==== */
@@ -181,46 +182,70 @@ button {
   color: white;
 }
 
-/* ==== Poster ==== */
-.row {
-  margin-top: 4rem;
+.banner {
+  width: 100%;
+  height: 579px;
+  padding: 14rem 2rem 2rem 2rem;
+  background: url("/assets/img/pexels-maxime-francis-2246476.jpg");
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 35px;
 }
 
-.row__title {
-  color: var(--primary-color);
-  text-transform: capitalize;
-  padding-bottom: 2rem;
-  padding-left: 2rem;
-  font-size: 1.475rem;
-}
-
-.row__posters {
+.banner__info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  overflow-y: hidden;
-  overflow-x: scroll;
-  padding-left: 2rem;
+  gap: 10px;
 }
 
-.row__posters::-webkit-scrollbar {
-  display: none;
-  height: 0px;
-  overflow: hidden;
-}
-
-.row__poster {
-  width: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  max-height: 232px;
-  margin-right: 1rem;
-  -webkit-transition: -webkit-transform .45s;
-  transition: -webkit-transform .45s;
-  transition: transform .45s;
-  transition: transform .45s, -webkit-transform .45s;
-  background: red;
+.banner__info > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-width: 110px;
+  min-height: 28px;
   border-radius: 3px;
+  font-size: var(--small-font-size);
+  font-weight: var(--medium-font-weight);
+  letter-spacing: -0.36px;
+  padding: 5px 30px;
+}
+
+.banner__info__category {
+  background: var(--white-color);
+  color: var(--gray-light);
+}
+
+.banner__info__minutes {
+  border: 1px solid var(--white-color);
+}
+
+.banner__title {
+  font-size: var(--h1-font-size);
+  letter-spacing: -1.6px;
+  line-height: var(--h1-font-size);
+  margin: 1.75rem 0;
+}
+
+.banner__btn {
+  background: var(--primary-color);
+  color: var(--white-color);
+  font-size: var(--small-font-size);
+  font-weight: var(--medium-font-weight);
+  padding: 12px 70px;
+  border-radius: 3px;
+}
+
+.banner__img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .swiper {

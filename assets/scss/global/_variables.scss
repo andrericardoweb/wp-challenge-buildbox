@@ -13,8 +13,8 @@
 
   --white-color: #fff;
   --white-trasparent: rgba(255, 255, 255, 0.16);
-  --gray01: #121212;
-  --gray02: #5A5A5A;
+  --gray-dark: #121212;
+  --gray-light: #5A5A5A;
 
   /* ==== Font and typografy ==== */
   --body-font: 'CircularSpotify', sans-serif;
@@ -25,6 +25,8 @@
 
   --normal-font-size: 1rem;
   --normal-font-weight: 700;
+
+  --medium-font-weight: 500;
 
   --small-font-size: .75rem;
   --small-font-weight: 700;
