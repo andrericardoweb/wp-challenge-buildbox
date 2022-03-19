@@ -7,5 +7,7 @@ Text Domain: desafio-wp
 
 @import 'global/fonts';
 @import 'global/variables';
-@import 'global';
+@import 'global/global';
 @import 'components/header';
+@import 'components/poster';
+@import 'components/swiper';

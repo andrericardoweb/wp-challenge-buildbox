@@ -1,45 +1,328 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <link rel="stylesheet" href="assets/css/style.css">
-  <title>Play</title>
-</head>
-<body>
-  <!-- HEADER -->
-  <header class="header" id="header">
-    <nav class="nav container">
-      <a href="/" class="nav__logo"><img src="/assets/img/logo.svg" alt="Logo Play"></a>
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
+    />
 
-      <div class="nav__menu" id="nav-menu">
-        <ul class="nav__list">
-          <li class="nav__item">
-            <a href="#" class="nav__link">
-              <img class="nav__icon" src="/assets/img/icon_menu_movie.svg" alt="">
-              <span class="nav__name">Filmes</span>
-            </a>            
-          </li>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Play</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="/" class="nav__logo"
+          ><img src="/assets/img/logo.svg" alt="Logo Play"
+        /></a>
 
-          <li class="nav__item">
-            <a href="#" class="nav__link">
-              <img class="nav__icon" src="/assets/img/icon_menu_documentary.svg" alt="">
-              <span class="nav__name">Documentários</span>
-            </a>            
-          </li>
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <img
+                  class="nav__icon"
+                  src="/assets/img/icon_menu_movie.svg"
+                  alt=""
+                />
+                <span class="nav__name">Filmes</span>
+              </a>
+            </li>
 
-          <li class="nav__item">
-            <a href="#" class="nav__link">
-              <img class="nav__icon" src="/assets/img/icon_menu_series.svg" alt="">
-              <span class="nav__name">Séries</span>
-            </a>            
-          </li>
-        </ul>
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <img
+                  class="nav__icon"
+                  src="/assets/img/icon_menu_documentary.svg"
+                  alt=""
+                />
+                <span class="nav__name">Documentários</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="#" class="nav__link">
+                <img
+                  class="nav__icon"
+                  src="/assets/img/icon_menu_series.svg"
+                  alt=""
+                />
+                <span class="nav__name">Séries</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <div class="banner">
+        <img src="assets/img/pexels-maxime-francis-2246476.jpg" alt="" />
       </div>
-    </nav>
-  </header>
 
-  <script src="assets/js/main.js"></script>
-</body>
+      <!-- Swiper [FILMES] -->
+      <div class="swiper mySwiper">
+        <h2 class="swiper-title">Filmes</h2>
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <!-- 01 Slide -->
+          <div class="swiper-slide">
+            <a href="http://google.com">
+              <div class="swiper-container-img">
+                <img src="/assets/img/pexels-gabriel-hohol-3593922.jpg" alt="" />
+              </div>
+              <button class="swiper-slide-btn">130min</button>
+              <h3 class="swiper-slide-title">Proin sollicitudi</h3>
+            </a>
+          </div>
+
+          <!-- 02 Slide -->
+          <div class="swiper-slide">
+            <a href="http://google.com">
+              <div class="swiper-container-img">
+                <img src="/assets/img/pexels-ivy-son-3490257.jpg" alt="" />
+              </div>
+              <button class="swiper-slide-btn">100min</button>
+              <h3 class="swiper-slide-title">Nunc pellentesque arcu sed</h3>
+            </a>
+          </div>
+
+          <!-- 03 Slide -->
+          <div class="swiper-slide">
+            <a href="http://google.com">
+              <div class="swiper-container-img">
+                <img src="/assets/img/pexels-dazzle-jam-1190208.jpg" alt="" />
+              </div>
+              <button class="swiper-slide-btn">95min</button>
+              <h3 class="swiper-slide-title">Maecenas tempus mi a ex malesuada</h3>
+            </a>
+          </div>
+
+          <!-- 04 Slide -->
+          <div class="swiper-slide">
+            <a href="http://google.com">
+              <div class="swiper-container-img">
+                <img src="/assets/img/pexels-pixabay-277253.jpg" alt="" />
+              </div>            
+              <button class="swiper-slide-btn">134min</button>
+              <h3 class="swiper-slide-title">Aenean convallis tortor</h3>
+            </a>
+          </div>
+
+          <!-- 05 Slide -->
+          <div class="swiper-slide">
+            <a href="http://google.com">
+              <div class="swiper-container-img">
+                <img src="/assets/img/pexels-pixabay-2346.jpg" alt="" />
+              </div>       
+              <button class="swiper-slide-btn">113min</button>
+              <h3 class="swiper-slide-title">In mattis</h3>
+            </a>
+          </div>
+
+          <!-- 06 Slide -->
+          <div class="swiper-slide">
+            <a href="http://google.com">
+              <div class="swiper-container-img">
+                <img src="/assets/img/pexels-francesco-ungaro-1525041.jpg" alt="" />
+              </div>
+              <button class="swiper-slide-btn">121min</button>
+              <h3 class="swiper-slide-title">Aliquam accumsan nulla</h3>
+            </a>
+          </div>
+
+          <!-- 07 Slide -->
+          <div class="swiper-slide">
+            <a href="http://google.com">
+              <div class="swiper-container-img">
+                <img src="/assets/img/pexels-chris-peeters-12801.jpg" alt="" />
+              </div>       
+              <button class="swiper-slide-btn">130min</button>
+              <h3 class="swiper-slide-title">Duis molestie ligula eget</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Swiper [DOCUMENTARIOS]-->
+      <div class="swiper mySwiper">
+        <h2 class="swiper-title">Filmes</h2>
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <!-- 01 Slide -->
+          <div class="swiper-slide">
+            <a href="http://google.com">
+              <div class="swiper-container-img">
+                <img src="/assets/img/pexels-gabriel-hohol-3593922.jpg" alt="" />
+              </div>
+              <button class="swiper-slide-btn">130min</button>
+              <h3 class="swiper-slide-title">Proin sollicitudi</h3>
+            </a>
+          </div>
+
+          <!-- 02 Slide -->
+          <div class="swiper-slide">
+            <a href="http://google.com">
+              <div class="swiper-container-img">
+                <img src="/assets/img/pexels-ivy-son-3490257.jpg" alt="" />
+              </div>
+              <button class="swiper-slide-btn">100min</button>
+              <h3 class="swiper-slide-title">Nunc pellentesque arcu sed</h3>
+            </a>
+          </div>
+
+          <!-- 03 Slide -->
+          <div class="swiper-slide">
+            <a href="http://google.com">
+              <div class="swiper-container-img">
+                <img src="/assets/img/pexels-dazzle-jam-1190208.jpg" alt="" />
+              </div>
+              <button class="swiper-slide-btn">95min</button>
+              <h3 class="swiper-slide-title">Maecenas tempus mi a ex malesuada</h3>
+            </a>
+          </div>
+
+          <!-- 04 Slide -->
+          <div class="swiper-slide">
+            <a href="http://google.com">
+              <div class="swiper-container-img">
+                <img src="/assets/img/pexels-pixabay-277253.jpg" alt="" />
+              </div>            
+              <button class="swiper-slide-btn">134min</button>
+              <h3 class="swiper-slide-title">Aenean convallis tortor</h3>
+            </a>
+          </div>
+
+          <!-- 05 Slide -->
+          <div class="swiper-slide">
+            <a href="http://google.com">
+              <div class="swiper-container-img">
+                <img src="/assets/img/pexels-pixabay-2346.jpg" alt="" />
+              </div>       
+              <button class="swiper-slide-btn">113min</button>
+              <h3 class="swiper-slide-title">In mattis</h3>
+            </a>
+          </div>
+
+          <!-- 06 Slide -->
+          <div class="swiper-slide">
+            <a href="http://google.com">
+              <div class="swiper-container-img">
+                <img src="/assets/img/pexels-francesco-ungaro-1525041.jpg" alt="" />
+              </div>
+              <button class="swiper-slide-btn">121min</button>
+              <h3 class="swiper-slide-title">Aliquam accumsan nulla</h3>
+            </a>
+          </div>
+
+          <!-- 07 Slide -->
+          <div class="swiper-slide">
+            <a href="http://google.com">
+              <div class="swiper-container-img">
+                <img src="/assets/img/pexels-chris-peeters-12801.jpg" alt="" />
+              </div>       
+              <button class="swiper-slide-btn">130min</button>
+              <h3 class="swiper-slide-title">Duis molestie ligula eget</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Swiper [SERIES]-->
+      <div class="swiper mySwiper">
+        <h2 class="swiper-title">Filmes</h2>
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <!-- 01 Slide -->
+          <div class="swiper-slide">
+            <a href="http://google.com">
+              <div class="swiper-container-img">
+                <img src="/assets/img/pexels-gabriel-hohol-3593922.jpg" alt="" />
+              </div>
+              <button class="swiper-slide-btn">130min</button>
+              <h3 class="swiper-slide-title">Proin sollicitudi</h3>
+            </a>
+          </div>
+
+          <!-- 02 Slide -->
+          <div class="swiper-slide">
+            <a href="http://google.com">
+              <div class="swiper-container-img">
+                <img src="/assets/img/pexels-ivy-son-3490257.jpg" alt="" />
+              </div>
+              <button class="swiper-slide-btn">100min</button>
+              <h3 class="swiper-slide-title">Nunc pellentesque arcu sed</h3>
+            </a>
+          </div>
+
+          <!-- 03 Slide -->
+          <div class="swiper-slide">
+            <a href="http://google.com">
+              <div class="swiper-container-img">
+                <img src="/assets/img/pexels-dazzle-jam-1190208.jpg" alt="" />
+              </div>
+              <button class="swiper-slide-btn">95min</button>
+              <h3 class="swiper-slide-title">Maecenas tempus mi a ex malesuada</h3>
+            </a>
+          </div>
+
+          <!-- 04 Slide -->
+          <div class="swiper-slide">
+            <a href="http://google.com">
+              <div class="swiper-container-img">
+                <img src="/assets/img/pexels-pixabay-277253.jpg" alt="" />
+              </div>            
+              <button class="swiper-slide-btn">134min</button>
+              <h3 class="swiper-slide-title">Aenean convallis tortor</h3>
+            </a>
+          </div>
+
+          <!-- 05 Slide -->
+          <div class="swiper-slide">
+            <a href="http://google.com">
+              <div class="swiper-container-img">
+                <img src="/assets/img/pexels-pixabay-2346.jpg" alt="" />
+              </div>       
+              <button class="swiper-slide-btn">113min</button>
+              <h3 class="swiper-slide-title">In mattis</h3>
+            </a>
+          </div>
+
+          <!-- 06 Slide -->
+          <div class="swiper-slide">
+            <a href="http://google.com">
+              <div class="swiper-container-img">
+                <img src="/assets/img/pexels-francesco-ungaro-1525041.jpg" alt="" />
+              </div>
+              <button class="swiper-slide-btn">121min</button>
+              <h3 class="swiper-slide-title">Aliquam accumsan nulla</h3>
+            </a>
+          </div>
+
+          <!-- 07 Slide -->
+          <div class="swiper-slide">
+            <a href="http://google.com">
+              <div class="swiper-container-img">
+                <img src="/assets/img/pexels-chris-peeters-12801.jpg" alt="" />
+              </div>       
+              <button class="swiper-slide-btn">130min</button>
+              <h3 class="swiper-slide-title">Duis molestie ligula eget</h3>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      
+    </main>
+
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="/assets/js/main.js"></script>
+  </body>
 </html>

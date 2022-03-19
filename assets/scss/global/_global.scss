@@ -4,6 +4,7 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
+  font-family: var(--body-font);
 }
 
 html {
@@ -34,3 +35,13 @@ img {
   max-width: 100%;
   height: auto;
 }
+
+button {
+  background: none;
+	border: none;
+	padding: 0;
+	cursor: pointer;
+	outline: none;
+}
+
+

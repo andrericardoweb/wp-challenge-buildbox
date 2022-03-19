@@ -1,0 +1,35 @@
+/* ==== Poster ==== */
+.row {
+  margin-top: 4rem;
+
+  &__title {
+    color: var(--primary-color);
+    text-transform: capitalize;
+    padding-bottom: 2rem;
+    padding-left: 2rem;
+    font-size: 1.475rem;
+  }
+
+  &__posters {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding-left: 2rem;
+  }
+
+  &__posters::-webkit-scrollbar {
+    display: none;
+    height: 0px;
+    overflow: hidden;
+  }
+
+  &__poster {
+    width: 100%;
+    object-fit: contain;
+    max-height: 232px;
+    margin-right: 1rem;
+    transition: transform .45s;
+    background: red;
+    border-radius: 3px;
+  }
+}
