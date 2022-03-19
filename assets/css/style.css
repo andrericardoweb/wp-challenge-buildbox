@@ -55,7 +55,6 @@ Text Domain: desafio-wp
   --normal-font-weight: 700;
   --medium-font-weight: 500;
   --small-font-size: .75rem;
-  --small-font-weight: 700;
   /* ==== z-index ==== */
   --z-tooltip: 10;
   --z-fixed: 100;
@@ -251,7 +250,7 @@ button {
 .swiper {
   width: 100%;
   height: 100%;
-  padding-top: 26px;
+  padding-top: 2.5rem;
   padding-left: 2rem;
   padding-right: 2rem;
 }
@@ -321,4 +320,37 @@ button {
   font-weight: 900;
   letter-spacing: -0.2px;
   line-height: 1.25rem;
+}
+
+.footer {
+  background: var(--gray-dark);
+  margin-top: 4rem;
+  width: 100%;
+}
+
+.footer__contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  row-gap: 1rem;
+  padding: 4.5rem 2rem 10rem 2rem;
+}
+
+.footer__logo {
+  width: 70px;
+}
+
+.footer__copy {
+  font-size: var(--small-font-size);
+  font-weight: var(--medium-font-weight);
 }
