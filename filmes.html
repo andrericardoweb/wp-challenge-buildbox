@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Play - Filmes</title>
+  </head>
+  <body>
+    <!-- HEADER -->
+    <header class="header" id="header">
+      <nav class="nav container">
+        <a href="/" class="nav__logo"
+          ><img src="/assets/img/logo.svg" alt="Logo Play"
+        /></a>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="/filmes.html" class="nav__link nav__link-active">
+                <svg
+                  class="nav__icon nav__icon-active"
+                  width="24"
+                  height="22"
+                  viewBox="0 0 24 16"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M23.458 2.111C23.2946 2.02683 23.1113 1.9893 22.928 2.00253C22.7447 2.01576 22.5686 2.07924 22.419 2.186L17 6.057V3C17 2.20435 16.6839 1.44129 16.1213 0.87868C15.5587 0.316071 14.7956 0 14 0H3C2.20435 0 1.44129 0.316071 0.87868 0.87868C0.31607 1.44129 0 2.20435 0 3L0 13C0 13.7956 0.31607 14.5587 0.87868 15.1213C1.44129 15.6839 2.20435 16 3 16H14C14.7956 16 15.5587 15.6839 16.1213 15.1213C16.6839 14.5587 17 13.7956 17 13V9.943L22.419 13.813C22.5881 13.9351 22.7915 14.0005 23 14C23.1592 13.9996 23.316 13.9619 23.458 13.89C23.6214 13.8058 23.7585 13.6782 23.8541 13.5212C23.9497 13.3642 24.0002 13.1838 24 13V3C24 2.81633 23.9494 2.63621 23.8538 2.4794C23.7582 2.32258 23.6213 2.19512 23.458 2.111ZM15 13C15 13.2652 14.8946 13.5196 14.7071 13.7071C14.5196 13.8946 14.2652 14 14 14H3C2.73478 14 2.48043 13.8946 2.29289 13.7071C2.10536 13.5196 2 13.2652 2 13V3C2 2.73478 2.10536 2.48043 2.29289 2.29289C2.48043 2.10536 2.73478 2 3 2H14C14.2652 2 14.5196 2.10536 14.7071 2.29289C14.8946 2.48043 15 2.73478 15 3V13ZM22 11.057L17.721 8L22 4.943V11.057Z"
+                    fill="white"
+                  />
+                </svg>
+                <span class="nav__name">Filmes</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="/documentarios.html" class="nav__link">
+                <svg class="nav__icon"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M18.82 0H3.18C2.33694 0.00105846 1.52871 0.336433 0.93257 0.93257C0.336433 1.52871 0.00105846 2.33694 0 3.18V18.82C0.00105846 19.6631 0.336433 20.4713 0.93257 21.0674C1.52871 21.6636 2.33694 21.9989 3.18 22H18.82C19.6631 21.9989 20.4713 21.6636 21.0674 21.0674C21.6636 20.4713 21.9989 19.6631 22 18.82V3.18C21.9989 2.33694 21.6636 1.52871 21.0674 0.93257C20.4713 0.336433 19.6631 0.00105846 18.82 0V0ZM17 7H20V10H17V7ZM15 10H7V2H15V10ZM5 10H2V7H5V10ZM2 12H5V15H2V12ZM7 12H15V20H7V12ZM17 12H20V15H17V12ZM20 3.18V5H17V2H18.82C19.1329 2.00026 19.4329 2.12467 19.6541 2.34591C19.8753 2.56714 19.9997 2.86713 20 3.18V3.18ZM3.18 2H5V5H2V3.18C2.00026 2.86713 2.12467 2.56714 2.34591 2.34591C2.56714 2.12467 2.86713 2.00026 3.18 2V2ZM2 18.82V17H5V20H3.18C2.86713 19.9997 2.56714 19.8753 2.34591 19.6541C2.12467 19.4329 2.00026 19.1329 2 18.82V18.82ZM18.82 20H17V17H20V18.82C19.9997 19.1329 19.8753 19.4329 19.6541 19.6541C19.4329 19.8753 19.1329 19.9997 18.82 20V20Z"
+                    fill="white"
+                  />
+                </svg>
+                <span class="nav__name">Documentários</span>
+              </a>
+            </li>
+
+            <li class="nav__item">
+              <a href="/series.html" class="nav__link">
+                <svg class="nav__icon"
+                  width="22"
+                  height="22"
+                  viewBox="0 0 22 22"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <g clip-path="url(#clip0_201_4)">
+                    <path
+                      d="M11 0C8.82441 0 6.69767 0.645139 4.88873 1.85383C3.07979 3.06253 1.66989 4.78049 0.83733 6.79048C0.00476617 8.80047 -0.213071 11.0122 0.211367 13.146C0.635804 15.2798 1.68345 17.2398 3.22183 18.7782C4.76021 20.3166 6.72022 21.3642 8.85401 21.7886C10.9878 22.2131 13.1995 21.9952 15.2095 21.1627C17.2195 20.3301 18.9375 18.9202 20.1462 17.1113C21.3549 15.3023 22 13.1756 22 11C21.9966 8.08367 20.8365 5.28778 18.7744 3.22563C16.7122 1.16347 13.9163 0.00344047 11 0V0ZM11 20C9.21997 20 7.47992 19.4722 5.99987 18.4832C4.51983 17.4943 3.36628 16.0887 2.68509 14.4442C2.0039 12.7996 1.82567 10.99 2.17294 9.24419C2.5202 7.49836 3.37737 5.89471 4.63604 4.63604C5.89472 3.37737 7.49836 2.5202 9.24419 2.17293C10.99 1.82567 12.7996 2.0039 14.4442 2.68508C16.0887 3.36627 17.4943 4.51983 18.4832 5.99987C19.4722 7.47991 20 9.21997 20 11C19.9974 13.3861 19.0483 15.6738 17.361 17.361C15.6738 19.0483 13.3861 19.9974 11 20V20Z"
+                      fill="white"
+                    />
+                    <path
+                      d="M15.555 10.1679L9.555 6.16791C9.4044 6.06743 9.22935 6.00972 9.04852 6.00093C8.86769 5.99215 8.68786 6.03262 8.52823 6.11803C8.3686 6.20344 8.23516 6.33058 8.14213 6.4859C8.04909 6.64121 7.99997 6.81886 8 6.99991V14.9999C7.99997 15.1809 8.04909 15.3586 8.14213 15.5139C8.23516 15.6692 8.3686 15.7964 8.52823 15.8818C8.68786 15.9672 8.86769 16.0077 9.04852 15.9989C9.22935 15.9901 9.4044 15.9324 9.555 15.8319L15.555 11.8319C15.692 11.7406 15.8043 11.6169 15.8819 11.4717C15.9596 11.3266 16.0002 11.1645 16.0002 10.9999C16.0002 10.8353 15.9596 10.6732 15.8819 10.5281C15.8043 10.3829 15.692 10.2592 15.555 10.1679ZM10 13.1319V8.86891L13.2 10.9999L10 13.1319Z"
+                      fill="white"
+                    />
+                  </g>
+                  <defs>
+                    <clipPath id="clip0_201_4">
+                      <rect width="22" height="22" fill="white" />
+                    </clipPath>
+                  </defs>
+                </svg>
+                <span class="nav__name">Séries</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="category">
+        <h1 class="category__title">Filmes</h1>
+        <p class="category__description">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean
+          scelerisque sed felis eu commodo. Duis dapibus eu arcu varius ornare.
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque
+          habitant morbi tristique senectus et netus et malesuada fames ac
+          turpis egestas. Proin vel lorem malesuada, pellentesque purus eget,
+          porttitor purus. Etiam eleifend facilisis lobortis. Curabitur erat
+          lacus, ullamcorper ut magna a, maximus pellentesque dolor.
+        </p>
+
+        <div class="category__grid">
+          <!-- 01 Slide -->
+          <div class="category__grid__item">
+            <a href="http://google.com">
+              <div class="category__grid__img">
+                <img
+                  src="/assets/img/pexels-gabriel-hohol-3593922-thumb.jpg"
+                  alt=""
+                />
+              </div>
+              <button class="category__grid__btn">130min</button>
+              <h3 class="category__grid__title">Proin sollicitudi</h3>
+            </a>
+          </div>
+
+          <!-- 02 Slide -->
+          <div class="category__grid__item">
+            <a href="http://google.com">
+              <div class="category__grid__img">
+                <img
+                  src="/assets/img/pexels-ivy-son-3490257-thumb.jpg"
+                  alt=""
+                />
+              </div>
+              <button class="category__grid__btn">130min</button>
+              <h3 class="category__grid__title">Nunc pellentesque arcu sed</h3>
+            </a>
+          </div>
+
+          <!-- 03 Slide -->
+          <div class="category__grid__item">
+            <a href="http://google.com">
+              <div class="category__grid__img">
+                <img
+                  src="/assets/img/pexels-dazzle-jam-1190208-thumb.jpg"
+                  alt=""
+                />
+              </div>
+              <button class="category__grid__btn">130min</button>
+              <h3 class="category__grid__title">
+                Maecenas tempus mi a ex malesuada
+              </h3>
+            </a>
+          </div>
+
+          <!-- 04 Slide -->
+          <div class="category__grid__item">
+            <a href="http://google.com">
+              <div class="category__grid__img">
+                <img src="/assets/img/pexels-pixabay-277253-thumb.jpg" alt="" />
+              </div>
+              <button class="category__grid__btn">130min</button>
+              <h3 class="category__grid__title">Nunc pellentesque arcu sed</h3>
+            </a>
+          </div>
+
+          <!-- 05 Slide -->
+          <div class="category__grid__item">
+            <a href="http://google.com">
+              <div class="category__grid__img">
+                <img src="/assets/img/pexels-pixabay-2346-thumb.jpg" alt="" />
+              </div>
+              <button class="category__grid__btn">130min</button>
+              <h3 class="category__grid__title">In mattis</h3>
+            </a>
+          </div>
+
+          <!-- 06 Slide -->
+          <div class="category__grid__item">
+            <a href="http://google.com">
+              <div class="category__grid__img">
+                <img
+                  src="/assets/img/pexels-francesco-ungaro-1525041-thumb.jpg"
+                  alt=""
+                />
+              </div>
+              <button class="category__grid__btn">130min</button>
+              <h3 class="category__grid__title">Aliquam accumsan nulla</h3>
+            </a>
+          </div>
+
+          <!-- 07 Slide -->
+          <div class="category__grid__item">
+            <a href="http://google.com">
+              <div class="category__grid__img">
+                <img
+                  src="/assets/img/pexels-chris-peeters-12801-thumb.jpg"
+                  alt=""
+                />
+              </div>
+              <button class="category__grid__btn">130min</button>
+              <h3 class="category__grid__title">Nunc pellentesque arcu sed</h3>
+            </a>
+          </div>
+
+          <!-- 08 Slide -->
+          <div class="category__grid__item">
+            <a href="http://google.com">
+              <div class="category__grid__img">
+                <img
+                  src="/assets/img/pexels-karley-saagi-2062882-thumb.jpg"
+                  alt=""
+                />
+              </div>
+              <button class="category__grid__btn">130min</button>
+              <h3 class="category__grid__title">Duis molestie ligula eget</h3>
+            </a>
+          </div>
+
+          <!-- 09 Slide -->
+          <div class="category__grid__item">
+            <a href="http://google.com">
+              <div class="category__grid__img">
+                <img
+                  src="/assets/img/pexels-perchek-industrie-5451980-thumb.jpg"
+                  alt=""
+                />
+              </div>
+              <button class="category__grid__btn">130min</button>
+              <h3 class="category__grid__title">Duis molestie ligula eget</h3>
+            </a>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer__contents">
+        <img class="footer__logo" src="/assets/img/logo.svg" alt="Logo Play" />
+        <p class="footer__copy">
+          © 2020 — Play — Todos os direitos reservados.
+        </p>
+      </div>
+    </footer>
+
+    <script src="/assets/js/main.js"></script>
+  </body>
+</html>
