@@ -9,7 +9,8 @@
     justify-content: center;
     align-items: center;
     row-gap: 1rem;
-    padding: 4.5rem 2rem 10rem 2rem;
+    padding-top: 4.5rem;
+    padding-bottom: 10rem;
   }
 
   &__logo {
@@ -18,5 +19,22 @@
   &__copy {
     font-size: var(--small-font-size);
     font-weight: var(--medium-font-weight);
+  }
+}
+
+@media screen and (min-width: 767px) {
+  .footer {
+
+    &__contents{  
+      align-items: flex-start;
+      row-gap: 2rem;
+    }
+
+    &__logo {
+      width: 103px;
+    }
+    &__copy {
+      font-size: 18px;
+    }
   }
 }

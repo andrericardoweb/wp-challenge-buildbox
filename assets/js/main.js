@@ -5,8 +5,9 @@ const swiper = new Swiper(".mySwiper", {
   //autoHeight: true,
   
   breakpoints: {
-    800: {
+    767: {
       grabCursor: true,
+      spaceBetween: 30,
     }
   }
 });

@@ -44,4 +44,14 @@ button {
 	outline: none;
 }
 
+.container {
+  padding: 0 2rem;
+}
+
+@media screen and (min-width: 767px){
+  .container {
+    padding: 0 140px;
+  }
+}
+
 
