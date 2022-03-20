@@ -1,6 +1,6 @@
 .category {
   width: 100%;
-  padding: 6.25rem 2rem 2rem 2rem;
+  padding-top: 6.25rem;
 
   &__title {
     color: var(--primary-color);
@@ -25,6 +25,10 @@
     gap: 1rem;
     row-gap: 2.375rem;
     width: 100%;
+
+    @media screen and (min-width: 400px) {
+      grid-template-columns: repeat(auto-fill, 149px);
+    }
   }
 
   &__grid__item {
@@ -39,7 +43,7 @@
   }
 
   &__grid__img {
-    width: 100%;
+    width: 149px;
     height: 232px;
 
     img {
@@ -62,15 +66,66 @@
     font-size: var(--small-font-size);
     font-family: var(--body-font);
     letter-spacing: 0.36px;
-    margin-top: 1rem;    
+    margin-top: 1rem;
   }
 
   &__grid__title {
     color: var(--white-color);
-    margin-top: .75rem;
+    margin-top: 0.75rem;
     font-size: 1.25rem;
     font-weight: 900;
     letter-spacing: -0.2px;
-    line-height: 1.25rem;    
+    line-height: 1.25rem;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .category {
+    padding-top: 235px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 170px;
+
+    &__title {
+      letter-spacing: -1px;
+      font-size: 40px;
+      line-height: 100px;
+      padding-bottom: 25px;
+    }
+
+    &__description {
+      font-size: 18px;
+      line-height: 35px;
+      letter-spacing: 0.54px;
+      font-weight: 400;
+    }
+
+    &__grid {
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 30px;
+      row-gap: 90px;
+    }
+
+    &__grid__item {
+      min-height: 387px;
+    }
+
+    &__grid__img {
+      width: 248px;
+      height: 387px;
+    }
+
+    &__grid__btn {
+      width: 128px;
+      height: 32px;
+      font-size: 18px;
+      letter-spacing: 0.54px;
+    }
+
+    &__grid__title {
+      font-size: 30px;
+      letter-spacing: -0.3px;
+      line-height: 30px;
+    }
   }
 }
