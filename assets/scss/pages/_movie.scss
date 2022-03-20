@@ -7,7 +7,7 @@
     gap: 10px;
     padding: 0 2rem;
 
-    >div {
+    > div {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -50,14 +50,65 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: url("/assets/img/pexels-maxime-francis-2246476-bannermobile.jpg");  background-size: cover;
+    background: url("/assets/img/pexels-maxime-francis-2246476-bannermobile.jpg");
+    background-size: cover;
     background-position: center;
     height: 210px;
 
     img {
       width: 53px;
       height: auto;
+      cursor: pointer;
     }
   }
+}
 
+@media screen and (min-width: 768px) {
+  .page {
+    max-width: 1920px;
+
+    &__contents__container {
+      max-width: 944px;
+      margin: 0 auto;
+    }
+
+    &__info {
+      padding: 0;
+      margin-top: 140px;
+      align-items: flex-start;
+
+      > div {
+        min-width: 128px;
+        min-height: 32px;
+        border-radius: 3px;
+        font-size: 18px;
+        letter-spacing: 0.54px;
+        padding: 5px 36px;
+      }
+    }
+
+    &__title {
+      font-size: 70px;
+      letter-spacing: -2.8px;
+      line-height: 1.5;
+      padding: 1rem 0 2.75rem 0;
+    }
+
+    &__movie {
+      margin: 0 140px;
+      padding: 0 140px;
+      height: 920px;
+      
+      img {
+        width: 90px;
+      }
+    }
+
+    &__description {
+      font-size: 18px;
+      line-height: 35px;
+      letter-spacing: 0.54px;
+      padding: 2.75rem 0 2.3rem 0;
+    }
+  }
 }

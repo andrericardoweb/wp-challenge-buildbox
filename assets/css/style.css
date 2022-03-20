@@ -684,4 +684,50 @@ button {
 .page__movie img {
   width: 53px;
   height: auto;
+  cursor: pointer;
+}
+
+@media screen and (min-width: 768px) {
+  .page {
+    max-width: 1920px;
+  }
+  .page__contents__container {
+    max-width: 944px;
+    margin: 0 auto;
+  }
+  .page__info {
+    padding: 0;
+    margin-top: 140px;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .page__info > div {
+    min-width: 128px;
+    min-height: 32px;
+    border-radius: 3px;
+    font-size: 18px;
+    letter-spacing: 0.54px;
+    padding: 5px 36px;
+  }
+  .page__title {
+    font-size: 70px;
+    letter-spacing: -2.8px;
+    line-height: 1.5;
+    padding: 1rem 0 2.75rem 0;
+  }
+  .page__movie {
+    margin: 0 140px;
+    padding: 0 140px;
+    height: 920px;
+  }
+  .page__movie img {
+    width: 90px;
+  }
+  .page__description {
+    font-size: 18px;
+    line-height: 35px;
+    letter-spacing: 0.54px;
+    padding: 2.75rem 0 2.3rem 0;
+  }
 }
